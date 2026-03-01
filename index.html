@@ -43,7 +43,7 @@
         #next { right: 20px; }
 
         .section-block { padding: 90px 0; background: white; margin: 40px 0; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
-        .section-block h2 { text-align: center; font-size: 2.8em; margin-bottom: 50px; display: flex; align-items: center; justify-content: center; gap: 16px; color: #0d2b5e; text-transform: uppercase; /* Большие буквы */ }
+        .section-block h2 { text-align: center; font-size: 2.8em; margin-bottom: 50px; display: flex; align-items: center; justify-content: center; gap: 16px; color: #0d2b5e; text-transform: uppercase; }
 
         .testimonials { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; }
         .testimonial { background: #f1f8ff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); max-width: 400px; text-align: center; }
@@ -61,15 +61,16 @@
         input, textarea { padding: 16px; font-size: 1.2em; border: 1px solid #ccc; border-radius: 8px; }
         .bank-details { background: #e8f5e9; padding: 25px; border-radius: 12px; border: 1px solid #a5d6a7; font-size: 1.2em; }
 
-        .crypto { margin-top: 30px; text-align: center; }
-        .crypto p { font-size: 1.2em; margin: 15px 0; display: flex; justify-content: center; align-items: center; gap: 10px; }
-        .copy-btn { background: #007bff; color: white; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; }
+        .crypto { margin-top: 50px; text-align: center; }
+        .crypto p { font-size: 1.2em; margin: 20px 0; display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap; /* Для мобильных */ word-break: break-all; overflow-wrap: break-word; /* Переносы адресов */ }
+        .copy-btn { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; min-width: 80px; }
         .copy-btn:hover { background: #0056b3; }
 
         footer { background: linear-gradient(to right, #0d2b5e, #1a4a8a); color: white; text-align: center; padding: 50px 0; margin-top: 80px; }
         footer a { color: #81d4fa; text-decoration: none; margin: 0 20px; font-size: 1.2em; }
 
         @media (max-width: 768px) {
+            .crypto p { flex-direction: column; gap: 10px; text-align: center; font-size: 1em; /* Уменьшаем шрифт для мобильных */ }
             .hero { padding: 100px 20px; }
             .hero h2 { font-size: 2.6em; }
             .slide img { height: 300px; }
@@ -130,7 +131,7 @@
             <h2 data-lang-en="About Us" data-lang-ru="О нас" data-lang-fa="درباره ما"><i class="fas fa-heart"></i> درباره ما</h2>
             <p data-lang-en="Iran Relief Fund is an independent nonprofit organization dedicated to providing immediate and transparent aid to civilians affected by recent conflicts in Iran. Founded by a group of volunteers with roots in Iran, we focus on direct support without political affiliations." 
                data-lang-ru="Фонд помощи Ирану — независимая некоммерческая организация, посвященная предоставлению немедленной и прозрачной помощи гражданским лицам, пострадавшим от недавних конфликтов в Иране. Основан группой волонтеров с корнями в Иране, мы фокусируемся на прямой поддержке без политических связей." 
-               data-lang-fa="صندوق امداد ایران یک سازمان غیرانتفاعی مستقل است که به ارائه کمک فوری و شفاف به غیرنظامیان آسیب‌دیده از درگیری‌های اخیر در ایران اختصاص دارد. توسط گروهی از داوطلبان با ریشه‌های ایرانی تأسیس شده، ما بر حمایت مستقیم بدون وابستگی سیاسی تمرکز داریم.">صندوق امداد ایران یک سازمان غیرانتفاعی مستقل است که به ارائه کمک فوری و شفاف به غیرنظامیان آسیب‌دیده از درگیری‌های اخیر در ایران اختصاص دارد. توسط گروهی از داوطلبان با ریشه‌های ایرانی تأسیس شده، ما بر حمایت مستقیم بدون وابستگی سیاسی تمرکز داریم.</p>
+               data-lang-fa="صندوق امداد ایران یک سازمان غیرانتفاعی مستقل است که به ارائه کمک فوری و شفاف به غیرنظامیان آسیب‌دیده از درگیری‌های اخیر در ایران اختصاص دارد. توسط گروهی از داوطلبان با ریشه‌های ایرانی تأسیس شده، ما بر حمایت مستقیم بدون وابستگی سیاسی تمرکز داریم.">صندوق امداد ایران یک سازمان غیرانتفاعی مستقل است که به ارائه کمک فوری و شفاف به غیرنظامیان آسیب‌دیده از درگیری‌های اخیر در ایران اختصاص دارد. توسط گروهی от داوطلبان با ریشه‌های ایرانی تأسیس شده، ما بر حمایت مستقیم بدون وابستگی سیاسی تمرکز داریم.</p>
             
             <p data-lang-en="<strong>Our Mission:</strong> To deliver rapid, accountable aid that rebuilds lives and restores hope in affected communities." 
                data-lang-ru="<strong>Наша миссия:</strong> Доставлять быструю, подотчётную помощь, которая восстанавливает жизни и возвращает надежду в пострадавших сообществах." 
