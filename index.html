@@ -43,7 +43,7 @@
         #next { right: 20px; }
 
         .section-block { padding: 90px 0; background: white; margin: 40px 0; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
-        .section-block h2 { text-align: center; font-size: 2.8em; margin-bottom: 50px; display: flex; align-items: center; justify-content: center; gap: 16px; color: #0d2b5e; }
+        .section-block h2 { text-align: center; font-size: 2.8em; margin-bottom: 50px; display: flex; align-items: center; justify-content: center; gap: 16px; color: #0d2b5e; text-transform: uppercase; /* Большие буквы */ }
 
         .testimonials { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; }
         .testimonial { background: #f1f8ff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); max-width: 400px; text-align: center; }
@@ -61,6 +61,11 @@
         input, textarea { padding: 16px; font-size: 1.2em; border: 1px solid #ccc; border-radius: 8px; }
         .bank-details { background: #e8f5e9; padding: 25px; border-radius: 12px; border: 1px solid #a5d6a7; font-size: 1.2em; }
 
+        .crypto { margin-top: 30px; text-align: center; }
+        .crypto p { font-size: 1.2em; margin: 15px 0; display: flex; justify-content: center; align-items: center; gap: 10px; }
+        .copy-btn { background: #007bff; color: white; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; }
+        .copy-btn:hover { background: #0056b3; }
+
         footer { background: linear-gradient(to right, #0d2b5e, #1a4a8a); color: white; text-align: center; padding: 50px 0; margin-top: 80px; }
         footer a { color: #81d4fa; text-decoration: none; margin: 0 20px; font-size: 1.2em; }
 
@@ -74,7 +79,6 @@
     </style>
 </head>
 <body>
-
     <header>
         <div class="container">
             <h1><i class="fas fa-hands-helping"></i> صندوق امداد ایران</h1>
@@ -95,7 +99,6 @@
             </nav>
         </div>
     </header>
-
     <section id="home" class="hero">
         <div class="container">
             <h2 data-lang-en="Help the Victims of Strikes in Iran" data-lang-ru="Помогите пострадавшим от ударов в Иране" data-lang-fa="کمک به قربانیان حملات در ایران">کمک به قربانیان حملات در ایران</h2>
@@ -103,48 +106,25 @@
                data-lang-ru="Мы собираем 300 000 $ для поддержки семей, потерявших дома, нуждающихся в медицинской помощи и базовых вещах после недавних разрушительных ударов." 
                data-lang-fa="ما ۳۰۰٬۰۰۰ دلار جمع‌آوری می‌کنیم تا به خانواده‌هایی که خانه‌هایشان را از دست دادند، به مراقبت پزشکی و لوازم اولیه نیاز دارند کمک کنیم.">ما ۳۰۰٬۰۰۰ دلار جمع‌آوری می‌کنیم تا به خانواده‌هایی که خانه‌هایشان را از دست دادند، به مراقبت پزشکی و لوازم اولیه نیاز دارند کمک کنیم.</p>
             <a href="#donate" class="cta-btn" data-lang-en="Donate Now" data-lang-ru="Пожертвовать сейчас" data-lang-fa="اکنون کمک کنید">اکنون کمک کنید</a>
-
             <div class="progress-container">
                 <div class="progress">
                     <div class="progress-bar">0% (0$ / 300000$)</div>
                 </div>
                 <p class="progress-text" data-lang-en="We have already helped with $60,000: restored 10 homes, aided 50 families." data-lang-ru="Мы уже помогли на 60 000$: восстановлено 10 домов, помощь 50 семьям." data-lang-fa="ما تاکنون با ۶۰٬۰۰۰ دلار کمک کرده‌ایم: بازسازی ۱۰ خانه، کمک به ۵۰ خانواده.">ما تاکنون با ۶۰٬۰۰۰ دلار کمک کرده‌ایم: بازسازی ۱۰ خانه، کمک به ۵۰ خانواده.</p>
             </div>
-
             <div class="slider">
                 <div class="slides">
-                    <div class="slide">
-
-<grok-card data-id="c2e3f8" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
-
-</div>
-                    <div class="slide">
-
-<grok-card data-id="4fbbd2" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
-
-</div>
-                    <div class="slide">
-
-<grok-card data-id="b16938" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
-
-</div>
-                    <div class="slide">
-
-<grok-card data-id="fa8aa6" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
-
-</div>
-                    <div class="slide">
-
-<grok-card data-id="fecbc4" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
-
-</div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
                 </div>
                 <button id="prev" class="slider-btn"><i class="fas fa-chevron-left"></i></button>
                 <button id="next" class="slider-btn"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
-
     <section id="about" class="section-block">
         <div class="container">
             <h2 data-lang-en="About Us" data-lang-ru="О нас" data-lang-fa="درباره ما"><i class="fas fa-heart"></i> درباره ما</h2>
@@ -157,7 +137,6 @@
                data-lang-fa="<strong>ماموریت ما:</strong> ارائه کمک سریع و مسئولانه که زندگی‌ها را بازسازی کند و امید را به جوامع آسیب‌دیده بازگرداند."><strong>ماموریت ما:</strong> ارائه کمک سریع و مسئولانه که زندگی‌ها را بازسازی کند و امید را به جوامع آسیب‌دیده بازگرداند.</p>
         </div>
     </section>
-
     <section id="how-help" class="section-block">
         <div class="container">
             <h2 data-lang-en="How We Help" data-lang-ru="Как мы помогаем" data-lang-fa="چگونه کمک می‌کنیم؟"><i class="fas fa-hand-holding-heart"></i> چگونه کمک می‌کنیم؟</h2>
@@ -195,7 +174,6 @@
             <p style="text-align:center; margin-top:40px; font-style:italic;" data-lang-en="We publish monthly reports on every expense for full transparency." data-lang-ru="Мы публикуем ежемесячные отчёты о каждом расходе для полной прозрачности." data-lang-fa="ما گزارش‌های ماهانه از هر هزینه را برای شفافیت کامل منتشر می‌کنیم.">ما گزارش‌های ماهانه از هر هزینه را برای شفافیت کامل منتشر می‌کنیم.</p>
         </div>
     </section>
-
     <section id="testimonials" class="section-block">
         <div class="container">
             <h2 data-lang-en="Testimonials" data-lang-ru="Отзывы" data-lang-fa="نظرات"><i class="fas fa-quote-left"></i> نظرات</h2>
@@ -211,28 +189,18 @@
             </div>
         </div>
     </section>
-
     <section id="donate" class="section-block">
         <div class="container">
-            <h2 data-lang-en="Donate" data-lang-ru="Пожертвования" data-lang-fa="کمک مالی"><i class="fas fa-donate"></i> کمک مالی</h2>
+            <h2 data-lang-en="DONATE" data-lang-ru="ПОЖЕРТВОВАНИЯ" data-lang-fa="کمک مالی"><i class="fas fa-donate"></i> کمک مالی</h2>
             
-            <form id="donate-form">
-                <label for="amount" data-lang-en="Amount ($)" data-lang-ru="Сумма ($)" data-lang-fa="مبلغ ($)">مبلغ ($)</label>
-                <input type="number" id="amount" min="5" value="50">
-                
-                <div class="bank-details" data-lang-en="Bank / card details: [Insert your details here — card number, IBAN, bank name, etc.]" 
-                     data-lang-ru="Реквизиты карты / банка: [Вставьте свои реквизиты здесь]" 
-                     data-lang-fa="جزئیات کارت بانکی / انتقال: [اینجا جزئیات خود را وارد کنید — شماره کارت، IBAN، نام بانک و غیره]">جزئیات کارت بانکی / انتقال: [اینجا جزئیات خود را وارد کنید — شماره کارت، IBAN، نام بانک و غیره]</div>
-            </form>
-
             <div class="crypto" style="margin-top:50px; text-align:center;">
                 <h3 data-lang-en="Crypto Donations" data-lang-ru="Криптовалюта" data-lang-fa="کمک با ارز دیجیتال"><i class="fab fa-bitcoin"></i> کمک با ارز دیجیتال</h3>
-                <p>BTC: bc1qyourbitcoinaddresshere</p>
-                <p>USDT (TRC20 / ERC20): your_tether_address_here</p>
+                <p>BTC: bc1qfy07vg9wedc3jjkt4wjgek7vmxdczrp940msrk <button class="copy-btn" onclick="copyToClipboard('bc1qfy07vg9wedc3jjkt4wjgek7vmxdczrp940msrk')">کپی</button></p>
+                <p>USDT TRC20: TK8sm5LHUbayifYESR2JGK7a4SepSLSsUW <button class="copy-btn" onclick="copyToClipboard('TK8sm5LHUbayifYESR2JGK7a4SepSLSsUW')">کپی</button></p>
+                <p>ETH: 0xb27394Ba4342eBC9943d5d7b5F868fC1C17C1a1d <button class="copy-btn" onclick="copyToClipboard('0xb27394Ba4342eBC9943d5d7b5F868fC1C17C1a1d')">کپی</button></p>
             </div>
         </div>
     </section>
-
     <section id="partners" class="section-block">
         <div class="container">
             <h2 data-lang-en="Our Partners" data-lang-ru="Наши партнёры" data-lang-fa="شرکای ما"><i class="fas fa-handshake"></i> شرکای ما</h2>
@@ -243,7 +211,6 @@
             </div>
         </div>
     </section>
-
     <section id="contact" class="section-block">
         <div class="container">
             <h2 data-lang-en="Contact" data-lang-ru="Контакты" data-lang-fa="تماس"><i class="fas fa-envelope"></i> تماس</h2>
@@ -254,14 +221,12 @@
             </form>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <p>© 2026 صندوق امداد ایران | تمام کمک‌ها با شفافیت کامل گزارش می‌شود</p>
             <p><a href="https://t.me/yourchannel" target="_blank"><i class="fab fa-telegram"></i> تلگرام</a> | <a href="https://x.com/youraccount" target="_blank"><i class="fab fa-x-twitter"></i> X</a> | <a href="mailto:info@iranrelief.org">info@iranrelief.org</a></p>
         </div>
     </footer>
-
     <script>
         // Мультиязык
         const langSwitcher = document.getElementById('language-switcher');
@@ -314,6 +279,15 @@
             e.preventDefault();
             alert('Сообщение отправлено!');
         });
+
+        // Функция копирования адресов
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('آدرس کپی شد! / Address copied! / Адрес скопирован!');
+            }).catch(err => {
+                alert('خطا در کپی: ' + err);
+            });
+        }
     </script>
 </body>
 </html>
