@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صندوق امداد ایران - کمک به قربانیان حملات در ایران. جمع‌آوری ۳۰۰٬۰۰۰ دلار برای بازسازی خانه‌ها و کمک پزشکی.">
+    <title>صندوق امداد ایران | Iran Relief Fund</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Vazir:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Vazir', sans-serif; margin: 0; background: #f5f7fa; color: #333; direction: rtl; line-height: 1.7; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header { background: linear-gradient(to right, #0d2b5e, #1a4a8a); color: white; padding: 30px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        header h1 { margin: 0; font-size: 2.5em; display: flex; align-items: center; gap: 15px; }
+        nav ul { list-style: none; display: flex; margin: 0; padding: 0; gap: 30px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 700; transition: 0.3s; }
+        nav ul li a:hover { color: #81d4fa; }
+        .donate-btn { background: #2e7d32; padding: 12px 28px; border-radius: 10px; color: white !important; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        #language-switcher { padding: 10px; font-size: 1.1em; border-radius: 6px; background: #fff; color: #0d2b5e; }
+
+        .hero { background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2550x1700+0+0/resize/1100/quality/50/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa5%2Fa4%2F97d7d99a4e37a6d28ea1aa354ff2%2Fap26059256811672.jpg') center/cover; color: white; text-align: center; padding: 150px 20px; text-shadow: 1px 1px 6px black; }
+        .hero h2 { font-size: 3.5em; margin: 0 0 30px; }
+        .hero p { font-size: 1.5em; max-width: 900px; margin: 0 auto 40px; }
+        .cta-btn { background: #1976d2; color: white; padding: 20px 50px; border-radius: 10px; font-size: 1.4em; text-decoration: none; display: inline-block; transition: 0.3s; box-shadow: 0 3px 8px rgba(0,0,0,0.2); }
+        .cta-btn:hover { background: #1565c0; }
+
+        .progress-container { max-width: 800px; margin: 50px auto; text-align: center; }
+        .progress { background: #e0e0e0; height: 40px; border-radius: 20px; overflow: hidden; box-shadow: inset 0 2px 5px rgba(0,0,0,0.15); }
+        .progress-bar { background: linear-gradient(90deg, #4caf50, #81c784); height: 100%; text-align: center; color: white; line-height: 40px; font-weight: bold; transition: width 1.5s ease; }
+        .progress-text { font-size: 1.3em; margin-top: 20px; color: #388e3c; }
+
+        .slider { position: relative; max-width: 1000px; margin: 60px auto; overflow: hidden; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .slides { display: flex; transition: transform 0.5s ease; }
+        .slide { min-width: 100%; box-sizing: border-box; text-align: center; }
+        .slide img { width: 100%; height: 500px; object-fit: cover; border-radius: 15px; }
+        .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 15px; cursor: pointer; font-size: 1.8em; transition: 0.3s; }
+        .slider-btn:hover { background: rgba(0,0,0,0.7); }
+        #prev { left: 20px; }
+        #next { right: 20px; }
+
+        .section-block { padding: 90px 0; background: white; margin: 40px 0; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .section-block h2 { text-align: center; font-size: 2.8em; margin-bottom: 50px; display: flex; align-items: center; justify-content: center; gap: 16px; color: #0d2b5e; }
+
+        .testimonials { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; }
+        .testimonial { background: #f1f8ff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); max-width: 400px; text-align: center; }
+        .testimonial p { font-style: italic; }
+        .testimonial cite { display: block; margin-top: 15px; font-weight: bold; }
+
+        table { width: 100%; border-collapse: collapse; margin: 30px 0; }
+        th, td { border: 1px solid #ddd; padding: 15px; text-align: center; }
+        th { background: #e8f5e9; color: #388e3c; }
+
+        .partners { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
+        .partner { width: 150px; height: 80px; background: #eee; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2em; color: #666; }
+
+        form { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 25px; }
+        input, textarea { padding: 16px; font-size: 1.2em; border: 1px solid #ccc; border-radius: 8px; }
+        .bank-details { background: #e8f5e9; padding: 25px; border-radius: 12px; border: 1px solid #a5d6a7; font-size: 1.2em; }
+
+        footer { background: linear-gradient(to right, #0d2b5e, #1a4a8a); color: white; text-align: center; padding: 50px 0; margin-top: 80px; }
+        footer a { color: #81d4fa; text-decoration: none; margin: 0 20px; font-size: 1.2em; }
+
+        @media (max-width: 768px) {
+            .hero { padding: 100px 20px; }
+            .hero h2 { font-size: 2.6em; }
+            .slide img { height: 300px; }
+            .testimonials { flex-direction: column; }
+            nav ul { flex-direction: column; gap: 20px; text-align: center; margin-top: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-hands-helping"></i> صندوق امداد ایران</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#about">درباره ما</a></li>
+                    <li><a href="#how-help">چگونه کمک می‌کنیم؟</a></li>
+                    <li><a href="#donate" class="donate-btn">کمک مالی</a></li>
+                    <li><a href="#testimonials">نظرات</a></li>
+                    <li><a href="#contact">تماس</a></li>
+                </ul>
+                <select id="language-switcher">
+                    <option value="fa">فارسی</option>
+                    <option value="en">English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2 data-lang-en="Help the Victims of Strikes in Iran" data-lang-ru="Помогите пострадавшим от ударов в Иране" data-lang-fa="کمک به قربانیان حملات در ایران">کمک به قربانیان حملات در ایران</h2>
+            <p data-lang-en="We are raising $300,000 to support families who lost their homes, need medical care and basic supplies after the recent devastating strikes." 
+               data-lang-ru="Мы собираем 300 000 $ для поддержки семей, потерявших дома, нуждающихся в медицинской помощи и базовых вещах после недавних разрушительных ударов." 
+               data-lang-fa="ما ۳۰۰٬۰۰۰ دلار جمع‌آوری می‌کنیم تا به خانواده‌هایی که خانه‌هایشان را از دست دادند، به مراقبت پزشکی و لوازم اولیه نیاز دارند کمک کنیم.">ما ۳۰۰٬۰۰۰ دلار جمع‌آوری می‌کنیم تا به خانواده‌هایی که خانه‌هایشان را از دست دادند، به مراقبت پزشکی و لوازم اولیه نیاز دارند کمک کنیم.</p>
+            <a href="#donate" class="cta-btn" data-lang-en="Donate Now" data-lang-ru="Пожертвовать сейчас" data-lang-fa="اکنون کمک کنید">اکنون کمک کنید</a>
+
+            <div class="progress-container">
+                <div class="progress">
+                    <div class="progress-bar">0% (0$ / 300000$)</div>
+                </div>
+                <p class="progress-text" data-lang-en="We have already helped with $60,000: restored 10 homes, aided 50 families." data-lang-ru="Мы уже помогли на 60 000$: восстановлено 10 домов, помощь 50 семьям." data-lang-fa="ما تاکنون با ۶۰٬۰۰۰ دلار کمک کرده‌ایم: بازسازی ۱۰ خانه، کمک به ۵۰ خانواده.">ما تاکنون با ۶۰٬۰۰۰ دلار کمک کرده‌ایم: بازسازی ۱۰ خانه، کمک به ۵۰ خانواده.</p>
+            </div>
+
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+
+<grok-card data-id="c2e3f8" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+
+</div>
+                    <div class="slide">
+
+<grok-card data-id="4fbbd2" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+
+</div>
+                    <div class="slide">
+
+<grok-card data-id="b16938" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+
+</div>
+                    <div class="slide">
+
+<grok-card data-id="fa8aa6" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+
+</div>
+                    <div class="slide">
+
+<grok-card data-id="fecbc4" data-type="image_card" data-plain-type="render_searched_image"  data-arg-size="LARGE" ></grok-card>
+
+</div>
+                </div>
+                <button id="prev" class="slider-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="next" class="slider-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-block">
+        <div class="container">
+            <h2 data-lang-en="About Us" data-lang-ru="О нас" data-lang-fa="درباره ما"><i class="fas fa-heart"></i> درباره ما</h2>
+            <p data-lang-en="Iran Relief Fund is an independent nonprofit organization dedicated to providing immediate and transparent aid to civilians affected by recent conflicts in Iran. Founded by a group of volunteers with roots in Iran, we focus on direct support without political affiliations." 
+               data-lang-ru="Фонд помощи Ирану — независимая некоммерческая организация, посвященная предоставлению немедленной и прозрачной помощи гражданским лицам, пострадавшим от недавних конфликтов в Иране. Основан группой волонтеров с корнями в Иране, мы фокусируемся на прямой поддержке без политических связей." 
+               data-lang-fa="صندوق امداد ایران یک سازمان غیرانتفاعی مستقل است که به ارائه کمک فوری و شفاف به غیرنظامیان آسیب‌دیده از درگیری‌های اخیر در ایران اختصاص دارد. توسط گروهی از داوطلبان با ریشه‌های ایرانی تأسیس شده، ما بر حمایت مستقیم بدون وابستگی سیاسی تمرکز داریم.">صندوق امداد ایران یک سازمان غیرانتفاعی مستقل است که به ارائه کمک فوری و شفاف به غیرنظامیان آسیب‌دیده از درگیری‌های اخیر در ایران اختصاص دارد. توسط گروهی از داوطلبان با ریشه‌های ایرانی تأسیس شده، ما بر حمایت مستقیم بدون وابستگی سیاسی تمرکز داریم.</p>
+            
+            <p data-lang-en="<strong>Our Mission:</strong> To deliver rapid, accountable aid that rebuilds lives and restores hope in affected communities." 
+               data-lang-ru="<strong>Наша миссия:</strong> Доставлять быструю, подотчётную помощь, которая восстанавливает жизни и возвращает надежду в пострадавших сообществах." 
+               data-lang-fa="<strong>ماموریت ما:</strong> ارائه کمک سریع و مسئولانه که زندگی‌ها را بازسازی کند و امید را به جوامع آسیب‌دیده بازگرداند."><strong>ماموریت ما:</strong> ارائه کمک سریع و مسئولانه که زندگی‌ها را بازسازی کند و امید را به جوامع آسیب‌دیده بازگرداند.</p>
+        </div>
+    </section>
+
+    <section id="how-help" class="section-block">
+        <div class="container">
+            <h2 data-lang-en="How We Help" data-lang-ru="Как мы помогаем" data-lang-fa="چگونه کمک می‌کنیم؟"><i class="fas fa-hand-holding-heart"></i> چگونه کمک می‌کنیم؟</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-lang-en="Category" data-lang-ru="Категория" data-lang-fa="دسته">دسته</th>
+                        <th data-lang-en="Percentage" data-lang-ru="Процент" data-lang-fa="درصد">درصد</th>
+                        <th data-lang-en="Description" data-lang-ru="Описание" data-lang-fa="توضیح">توضیح</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>بازسازی خانه‌ها</td>
+                        <td>50%</td>
+                        <td>خرید مصالح و تعمیرات اولیه برای خانه‌های تخریب‌شده.</td>
+                    </tr>
+                    <tr>
+                        <td>کمک پزشکی</td>
+                        <td>30%</td>
+                        <td>دارو، درمان و توانبخشی برای مجروحان.</td>
+                    </tr>
+                    <tr>
+                        <td>لوازم اولیه</td>
+                        <td>10%</td>
+                        <td>غذا، لباس و وسایل بهداشتی.</td>
+                    </tr>
+                    <tr>
+                        <td>حمایت از کودکان</td>
+                        <td>10%</td>
+                        <td>آموزش و تغذیه برای بچه‌ها.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align:center; margin-top:40px; font-style:italic;" data-lang-en="We publish monthly reports on every expense for full transparency." data-lang-ru="Мы публикуем ежемесячные отчёты о каждом расходе для полной прозрачности." data-lang-fa="ما گزارش‌های ماهانه از هر هزینه را برای شفافیت کامل منتشر می‌کنیم.">ما گزارش‌های ماهانه از هر هزینه را برای شفافیت کامل منتشر می‌کنیم.</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section-block">
+        <div class="container">
+            <h2 data-lang-en="Testimonials" data-lang-ru="Отзывы" data-lang-fa="نظرات"><i class="fas fa-quote-left"></i> نظرات</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p data-lang-en='"Thanks to your fund, our family got medical help after the strike. You saved lives."' data-lang-ru='"Благодаря вашему фонду наша семья получила медицинскую помощь после удара. Вы спасли жизни."' data-lang-fa='"با تشکر از صندوق شما، خانواده ما پس از حمله کمک پزشکی دریافت کرد. شما جان‌ها را نجات دادید."'>"با تشکر از صندوق شما، خانواده ما پس از حمله کمک پزشکی دریافت کرد. شما جان‌ها را نجات دادید."</p>
+                    <cite> - خانواده‌ای از تهران</cite>
+                </div>
+                <div class="testimonial">
+                    <p data-lang-en='"The aid for rebuilding our home came quickly and without bureaucracy. Real help!"' data-lang-ru='"Помощь на восстановление дома пришла быстро и без бюрократии. Настоящая помощь!"' data-lang-fa='"کمک برای بازسازی خانه ما سریع و بدون کاغذبازی آمد. کمک واقعی!"'>"کمک برای بازسازی خانه ما سریع و بدون کاغذبازی آمد. کمک واقعی!"</p>
+                    <cite> - ساکن شیراز</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="donate" class="section-block">
+        <div class="container">
+            <h2 data-lang-en="Donate" data-lang-ru="Пожертвования" data-lang-fa="کمک مالی"><i class="fas fa-donate"></i> کمک مالی</h2>
+            
+            <form id="donate-form">
+                <label for="amount" data-lang-en="Amount ($)" data-lang-ru="Сумма ($)" data-lang-fa="مبلغ ($)">مبلغ ($)</label>
+                <input type="number" id="amount" min="5" value="50">
+                
+                <div class="bank-details" data-lang-en="Bank / card details: [Insert your details here — card number, IBAN, bank name, etc.]" 
+                     data-lang-ru="Реквизиты карты / банка: [Вставьте свои реквизиты здесь]" 
+                     data-lang-fa="جزئیات کارت بانکی / انتقال: [اینجا جزئیات خود را وارد کنید — شماره کارت، IBAN، نام بانک و غیره]">جزئیات کارت بانکی / انتقال: [اینجا جزئیات خود را وارد کنید — شماره کارت، IBAN، نام بانک و غیره]</div>
+            </form>
+
+            <div class="crypto" style="margin-top:50px; text-align:center;">
+                <h3 data-lang-en="Crypto Donations" data-lang-ru="Криптовалюта" data-lang-fa="کمک با ارز دیجیتال"><i class="fab fa-bitcoin"></i> کمک با ارز دیجیتال</h3>
+                <p>BTC: bc1qyourbitcoinaddresshere</p>
+                <p>USDT (TRC20 / ERC20): your_tether_address_here</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="section-block">
+        <div class="container">
+            <h2 data-lang-en="Our Partners" data-lang-ru="Наши партнёры" data-lang-fa="شرکای ما"><i class="fas fa-handshake"></i> شرکای ما</h2>
+            <div class="partners">
+                <div class="partner">UNHCR</div>
+                <div class="partner">Red Cross</div>
+                <div class="partner">Local NGO</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-block">
+        <div class="container">
+            <h2 data-lang-en="Contact" data-lang-ru="Контакты" data-lang-fa="تماس"><i class="fas fa-envelope"></i> تماس</h2>
+            <form>
+                <input type="text" placeholder="نام / Name" required>
+                <textarea placeholder="پیام شما / Ваше сообщение" rows="6" required></textarea>
+                <button type="submit" class="cta-btn" data-lang-en="Send" data-lang-ru="Отправить" data-lang-fa="ارسال">ارسال</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 صندوق امداد ایران | تمام کمک‌ها با شفافیت کامل گزارش می‌شود</p>
+            <p><a href="https://t.me/yourchannel" target="_blank"><i class="fab fa-telegram"></i> تلگرام</a> | <a href="https://x.com/youraccount" target="_blank"><i class="fab fa-x-twitter"></i> X</a> | <a href="mailto:info@iranrelief.org">info@iranrelief.org</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Мультиязык
+        const langSwitcher = document.getElementById('language-switcher');
+        const elements = document.querySelectorAll('[data-lang-en], [data-lang-ru], [data-lang-fa]');
+
+        function switchLanguage(lang) {
+            elements.forEach(el => {
+                el.textContent = el.getAttribute(`data-lang-${lang}`) || el.textContent;
+            });
+            document.documentElement.lang = lang;
+            document.body.style.direction = (lang === 'fa') ? 'rtl' : 'ltr';
+        }
+
+        langSwitcher.addEventListener('change', (e) => switchLanguage(e.target.value));
+        switchLanguage('fa');
+
+        // Прогресс-бар
+        const goal = 300000;
+        let collected = 60000; // Меняй здесь сумму собранных средств
+        const progressBar = document.querySelector('.progress-bar');
+        progressBar.style.width = `${(collected / goal) * 100}%`;
+        progressBar.textContent = `${Math.round((collected / goal) * 100)}% (${collected}$ / ${goal}$)`;
+
+        // Карусель фото
+        const slides = document.querySelector('.slides');
+        const slideCount = slides.children.length;
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slideCount;
+            showSlide(currentIndex);
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+            showSlide(currentIndex);
+        });
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slideCount;
+            showSlide(currentIndex);
+        }, 5000); // Авто-смена каждые 5 сек
+
+        // Форма контактов (имитация)
+        document.querySelector('#contact form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Сообщение отправлено!');
+        });
+    </script>
+</body>
+</html>
