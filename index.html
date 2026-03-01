@@ -6,14 +6,14 @@
     <meta name="description" content="صندوق إغاثة إيران - المساعدة لضحايا الهجمات في إيران. جمع ۳۰۰٬۰۰۰ دولار لإعادة بناء المنازل والمساعدة الطبية.">
     <title>صندوق إغاثة إيران | Iran Relief Fund</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Красивый favicon: скачай или сгенерируй на favicon-generator.org с логотипом сердца или иранского флага, и загрузи файл favicon.ico в корень сайта -->
-    
+   
     <link href="https://fonts.googleapis.com/css2?family=Vazir:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
+   
     <style>
         body { font-family: 'Vazir', sans-serif; margin: 0; background: #f5f7fa; color: #333; direction: rtl; line-height: 1.7; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        
+       
         header { background: linear-gradient(to right, #0d2b5e, #1a4a8a); color: white; padding: 30px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
         header .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
         header h1 { margin: 0; font-size: 2.5em; display: flex; align-items: center; gap: 15px; }
@@ -72,17 +72,18 @@
 <body>
     <header>
         <div class="container">
-            <h1><i class="fas fa-hands-helping"></i> صندوق امداد ایران</h1>
+            <h1><i class="fas fa-hands-helping"></i> صندوق إغاثة إيران</h1>
             <nav>
                 <ul>
-                    <li><a href="#home">خانه</a></li>
-                    <li><a href="#about">درباره ما</a></li>
-                    <li><a href="#how-help">چگونه کمک می‌کنیم؟</a></li>
-                    <li><a href="#donate" class="donate-btn">کمک مالی</a></li>
-                    <li><a href="#testimonials">نظرات</a></li>
-                    <li><a href="#contact">تماس</a></li>
+                    <li><a href="#home" data-lang-en="Home" data-lang-ru="Главная" data-lang-fa="خانه" data-lang-ar="الرئيسية">الرئيسية</a></li>
+                    <li><a href="#about" data-lang-en="About Us" data-lang-ru="О нас" data-lang-fa="درباره ما" data-lang-ar="عنا">عنا</a></li>
+                    <li><a href="#how-help" data-lang-en="How We Help" data-lang-ru="Как мы помогаем" data-lang-fa="چگونه کمک می‌کنیم؟" data-lang-ar="كيف نساعد؟">كيف نساعد؟</a></li>
+                    <li><a href="#donate" class="donate-btn" data-lang-en="Donate" data-lang-ru="Пожертвовать" data-lang-fa="کمک مالی" data-lang-ar="تبرع">تبرع</a></li>
+                    <li><a href="#testimonials" data-lang-en="Testimonials" data-lang-ru="Отзывы" data-lang-fa="نظرات" data-lang-ar="الشهادات">الشهادات</a></li>
+                    <li><a href="#contact" data-lang-en="Contact" data-lang-ru="Контакты" data-lang-fa="تماس" data-lang-ar="الاتصال">الاتصال</a></li>
                 </ul>
                 <select id="language-switcher">
+                    <option value="ar">العربية</option>
                     <option value="fa">فارسی</option>
                     <option value="en">English</option>
                     <option value="ru">Русский</option>
@@ -92,16 +93,17 @@
     </header>
     <section id="home" class="hero">
         <div class="container">
-            <h2 data-lang-en="Help the Victims of Strikes in Iran" data-lang-ru="Помогите пострадавшим от ударов в Иране" data-lang-fa="کمک به قربانیان حملات در ایران">کمک به قربانیان حملات در ایران</h2>
+            <h2 data-lang-en="Help the Victims of Strikes in Iran" data-lang-ru="Помогите пострадавшим от ударов в Иране" data-lang-fa="کمک به قربانیان حملات در ایران" data-lang-ar="مساعدة ضحايا الهجمات في إيران">مساعدة ضحايا الهجمات في إيران</h2>
             <p data-lang-en="We are raising $300,000 to support families who lost their homes, need medical care and basic supplies after the recent devastating strikes."
                data-lang-ru="Мы собираем 300 000 $ для поддержки семей, потерявших дома, нуждающихся в медицинской помощи и базовых вещах после недавних разрушительных ударов."
-               data-lang-fa="ما ۳۰۰٬۰۰۰ دلار جمع‌آوری می‌کنیم تا به خانواده‌هایی که خانه‌هایشان را از دست دادند، به مراقبت پزشکی و لوازم اولیه نیاز دارند کمک کنیم.">ما ۳۰۰٬۰۰۰ دلار جمع‌آوری می‌کنیم تا به خانواده‌هایی که خانه‌هایشان را از دست دادند، به مراقبت پزشکی و لوازم اولیه نیاز دارند کمک کنیم.</p>
-            <a href="#donate" class="cta-btn" data-lang-en="Donate Now" data-lang-ru="Пожертвовать сейчас" data-lang-fa="اکنون کمک کنید">اکنون کمک کنید</a>
+               data-lang-fa="ما ۳۰۰٬۰۰۰ دلار جمع‌آوری می‌کنیم تا به خانواده‌هایی که خانه‌هایشان را از دست دادند، به مراقبت پزشکی و لوازم اولیه نیاز دارند کمک کنیم."
+               data-lang-ar="نحن نجمع 300,000 دولار لدعم العائلات التي فقدت منازلها، وتحتاج إلى رعاية طبية ومستلزمات أساسية بعد الهجمات المدمرة الأخيرة.">نحن نجمع 300,000 دولار لدعم العائلات التي فقدت منازلها، وتحتاج إلى رعاية طبية ومستلزمات أساسية بعد الهجمات المدمرة الأخيرة.</p>
+            <a href="#donate" class="cta-btn" data-lang-en="Donate Now" data-lang-ru="Пожертвовать сейчас" data-lang-fa="اکنون کمک کنید" data-lang-ar="تبرع الآن">تبرع الآن</a>
             <div class="progress-container">
                 <div class="progress">
                     <div class="progress-bar">0% (0$ / 300000$)</div>
                 </div>
-                <p class="progress-text" data-lang-en="We have already helped with $60,000: restored 10 homes, aided 50 families." data-lang-ru="Мы уже помогли на 60 000$: восстановлено 10 домов, помощь 50 семьям." data-lang-fa="ما تاکنون با ۶۰٬۰۰۰ دلار کمک کرده‌ایم: بازسازی ۱۰ خانه، کمک به ۵۰ خانواده.">ما تاکنون با ۶۰٬۰۰۰ دلار کمک کرده‌ایم: بازسازی ۱۰ خانه، کمک به ۵۰ خانواده.</p>
+                <p class="progress-text" data-lang-en="We have already helped with $60,000: restored 10 homes, aided 50 families." data-lang-ru="Мы уже помогли на 60 000$: восстановлено 10 домов, помощь 50 семьям." data-lang-fa="ما تاکنون با ۶۰٬۰۰۰ دلار کمک کرده‌ایم: بازسازی ۱۰ خانه، کمک به ۵۰ خانواده." data-lang-ar="لقد ساعدنا حتى الآن بـ 60,000 دولار: إعادة بناء 10 منازل، مساعدة 50 عائلة.">لقد ساعدنا حتى الآن بـ 60,000 دولار: إعادة بناء 10 منازل، مساعدة 50 عائلة.</p>
             </div>
             <div class="slider">
                 <div class="slides">
@@ -118,83 +120,85 @@
     </section>
     <section id="about" class="section-block">
         <div class="container">
-            <h2 data-lang-en="About Us" data-lang-ru="О нас" data-lang-fa="درباره ما"><i class="fas fa-heart"></i> درباره ما</h2>
-            <p data-lang-en="Iran Relief Fund is an independent nonprofit organization dedicated to providing immediate and transparent aid to civilians affected by recent conflicts in Iran. Founded by a group of volunteers with roots in Iran, we focus on direct support without political affiliations." 
-               data-lang-ru="Фонд помощи Ирану — независимая некоммерческая организация, посвященная предоставлению немедленной и прозрачной помощи гражданским лицам, пострадавшим от недавних конфликтов в Иране. Основан группой волонтеров с корнями в Иране, мы фокусируемся на прямой поддержке без политических связей." 
-               data-lang-fa="صندوق امداد ایران یک سازمان غیرانتفاعی مستقل است که به ارائه کمک فوری و شفاف به غیرنظامیان آسیب‌دیده از درگیری‌های اخیر در ایران اختصاص دارد. توسط گروهی از داوطلبان با ریشه‌های ایرانی تأسیس شده، ما بر حمایت مستقیم بدون وابستگی سیاسی تمرکز داریم.">صندوق امداد ایران یک سازمان غیرانتفاعی مستقل است که به ارائه کمک فوری و شفاف به غیرنظامیان آسیب‌دیده از درگیری‌های اخیر در ایران اختصاص دارد. توسط گروهی از داوطلبان با ریشه‌های ایرانی تأسیس شده، ما بر حمایت مستقیم بدون وابستگی سیاسی تمرکز داریم.</p>
-            
-            <p data-lang-en="<strong>Our Mission:</strong> To deliver rapid, accountable aid that rebuilds lives and restores hope in affected communities." 
-               data-lang-ru="<strong>Наша миссия:</strong> Доставлять быструю, подотчётную помощь, которая восстанавливает жизни и возвращает надежду в пострадавших сообществах." 
-               data-lang-fa="<strong>ماموریت ما:</strong> ارائه کمک سریع و مسئولانه که زندگی‌ها را بازسازی کند و امید را به جوامع آسیب‌دیده بازگرداند."><strong>ماموریت ما:</strong> ارائه کمک سریع و مسئولانه که زندگی‌ها را بازسازی کند و امید را به جوامع آسیب‌دیده بازگرداند.</p>
+            <h2 data-lang-en="About Us" data-lang-ru="О нас" data-lang-fa="درباره ما" data-lang-ar="عنا"><i class="fas fa-heart"></i> عنا</h2>
+            <p data-lang-en="Iran Relief Fund is an independent nonprofit organization dedicated to providing immediate and transparent aid to civilians affected by recent conflicts in Iran. Founded by a group of volunteers with roots in Iran, we focus on direct support without political affiliations."
+               data-lang-ru="Фонд помощи Ирану — независимая некоммерческая организация, посвященная предоставлению немедленной и прозрачной помощи гражданским лицам, пострадавшим от недавних конфликтов в Иране. Основан группой волонтеров с корнями в Иране, мы фокусируемся на прямой поддержке без политических связей."
+               data-lang-fa="صندوق امداد ایران یک سازمان غیرانتفاعی مستقل است که به ارائه کمک فوری و شفاف به غیرنظامیان آسیب‌دیده از درگیری‌های اخیر در ایران اختصاص دارد. توسط گروهی از داوطلبان با ریشه‌های ایرانی تأسیس شده، ما بر حمایت مستقیم بدون وابستگی سیاسی تمرکز داریم."
+               data-lang-ar="صندوق إغاثة إيران هو منظمة غير ربحية مستقلة مخصصة لتقديم مساعدة فورية وشفافة للمدنيين المتضررين من النزاعات الأخيرة في إيران. أسسها مجموعة من المتطوعين ذوي جذور إيرانية، ونركز على الدعم المباشر دون انتماءات سياسية.">صندوق إغاثة إيران هو منظمة غير ربحية مستقلة مخصصة لتقديم مساعدة فورية وشفافة للمدنيين المتضررين من النزاعات الأخيرة في إيران. أسسها مجموعة من المتطوعين ذوي جذور إيرانية، ونركز على الدعم المباشر دون انتماءات سياسية.</p>
+           
+            <p data-lang-en="<strong>Our Mission:</strong> To deliver rapid, accountable aid that rebuilds lives and restores hope in affected communities."
+               data-lang-ru="<strong>Наша миссия:</strong> Доставлять быструю, подотчётную помощь, которая восстанавливает жизни и возвращает надежду в пострадавших сообществах."
+               data-lang-fa="<strong>ماموریت ما:</strong> ارائه کمک سریع و مسئولانه که زندگی‌ها را بازسازی کند و امید را به جوامع آسیب‌دیده بازگرداند."
+               data-lang-ar="<strong>مهمتنا:</strong> تقديم مساعدة سريعة ومسؤولة تعيد بناء الحياة وتعيد الأمل في المجتمعات المتضررة."><strong>مهمتنا:</strong> تقديم مساعدة سريعة ومسؤولة تعيد بناء الحياة وتعيد الأمل في المجتمعات المتضررة.</p>
         </div>
     </section>
     <section id="how-help" class="section-block">
         <div class="container">
-            <h2 data-lang-en="How We Help" data-lang-ru="Как мы помогаем" data-lang-fa="چگونه کمک می‌کنیم؟"><i class="fas fa-hand-holding-heart"></i> چگونه کمک می‌کنیم؟</h2>
+            <h2 data-lang-en="How We Help" data-lang-ru="Как мы помогаем" data-lang-fa="چگونه کمک می‌کنیم؟" data-lang-ar="كيف نساعد؟"><i class="fas fa-hand-holding-heart"></i> كيف نساعد؟</h2>
             <table>
                 <thead>
                     <tr>
-                        <th data-lang-en="Category" data-lang-ru="Категория" data-lang-fa="دسته">دسته</th>
-                        <th data-lang-en="Percentage" data-lang-ru="Процент" data-lang-fa="درصد">درصد</th>
-                        <th data-lang-en="Description" data-lang-ru="Описание" data-lang-fa="توضیح">توضیح</th>
+                        <th data-lang-en="Category" data-lang-ru="Категория" data-lang-fa="دسته" data-lang-ar="الفئة">الفئة</th>
+                        <th data-lang-en="Percentage" data-lang-ru="Процент" data-lang-fa="درصد" data-lang-ar="النسبة المئوية">النسبة المئوية</th>
+                        <th data-lang-en="Description" data-lang-ru="Описание" data-lang-fa="توضیح" data-lang-ar="الوصف">الوصف</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>بازسازی خانه‌ها</td>
+                        <td data-lang-en="Home Rebuilding" data-lang-ru="Восстановление домов" data-lang-fa="بازسازی خانه‌ها" data-lang-ar="إعادة بناء المنازل">إعادة بناء المنازل</td>
                         <td>50%</td>
-                        <td>خرید مصالح و تعمیرات اولیه برای خانه‌های تخریب‌شده.</td>
+                        <td data-lang-en="Purchasing materials and initial repairs for destroyed homes." data-lang-ru="Покупка материалов и первоначальный ремонт для разрушенных домов." data-lang-fa="خرید مصالح و تعمیرات اولیه برای خانه‌های تخریب‌شده." data-lang-ar="شراء المواد وإصلاحات أولية للمنازل المدمرة.">شراء المواد وإصلاحات أولية للمنازل المدمرة.</td>
                     </tr>
                     <tr>
-                        <td>کمک پزشکی</td>
+                        <td data-lang-en="Medical Aid" data-lang-ru="Медицинская помощь" data-lang-fa="کمک پزشکی" data-lang-ar="المساعدة الطبية">المساعدة الطبية</td>
                         <td>30%</td>
-                        <td>دارو، درمان و توانبخشی برای مجروحان.</td>
+                        <td data-lang-en="Medications, treatment, and rehabilitation for the injured." data-lang-ru="Лекарства, лечение и реабилитация для раненых." data-lang-fa="دارو، درمان و توانبخشی برای مجروحان." data-lang-ar="أدوية، علاج وإعادة تأهيل للجرحى.">أدوية، علاج وإعادة تأهيل للجرحى.</td>
                     </tr>
                     <tr>
-                        <td>لوازم اولیه</td>
+                        <td data-lang-en="Basic Supplies" data-lang-ru="Базовые нужды" data-lang-fa="لوازم اولیه" data-lang-ar="المستلزمات الأساسية">المستلزمات الأساسية</td>
                         <td>10%</td>
-                        <td>غذا، لباس و وسایل بهداشتی.</td>
+                        <td data-lang-en="Food, clothing, and hygiene items." data-lang-ru="Еда, одежда и средства гигиены." data-lang-fa="غذا، لباس و وسایل بهداشتی." data-lang-ar="طعام، ملابس وأدوات صحية.">طعام، ملابس وأدوات صحية.</td>
                     </tr>
                     <tr>
-                        <td>حمایت از کودکان</td>
+                        <td data-lang-en="Child Support" data-lang-ru="Поддержка детей" data-lang-fa="حمایت از کودکان" data-lang-ar="دعم الأطفال">دعم الأطفال</td>
                         <td>10%</td>
-                        <td>آموزش و تغذیه برای بچه‌ها.</td>
+                        <td data-lang-en="Education and nutrition for children." data-lang-ru="Образование и питание для детей." data-lang-fa="آموزش و تغذیه برای بچه‌ها." data-lang-ar="تعليم وتغذية للأطفال.">تعليم وتغذية للأطفال.</td>
                     </tr>
                 </tbody>
             </table>
-            <p style="text-align:center; margin-top:40px; font-style:italic;" data-lang-en="We publish monthly reports on every expense for full transparency." data-lang-ru="Мы публикуем ежемесячные отчёты о каждом расходе для полной прозрачности." data-lang-fa="ما گزارش‌های ماهانه از هر هزینه را برای شفافیت کامل منتشر می‌کنیم.">ما گزارش‌های ماهانه از هر هزینه را برای شفافیت کامل منتشر می‌کنیم.</p>
+            <p style="text-align:center; margin-top:40px; font-style:italic;" data-lang-en="We publish monthly reports on every expense for full transparency." data-lang-ru="Мы публикуем ежемесячные отчёты о каждом расходе для полной прозрачности." data-lang-fa="ما گزارش‌های ماهانه از هر هزینه را برای شفافیت کامل منتشر می‌کنیم." data-lang-ar="ننشر تقارير شهرية عن كل نفقة للشفافية الكاملة.">ننشر تقارير شهرية عن كل نفقة للشفافية الكاملة.</p>
         </div>
     </section>
     <section id="testimonials" class="section-block">
         <div class="container">
-            <h2 data-lang-en="Testimonials" data-lang-ru="Отзывы" data-lang-fa="نظرات"><i class="fas fa-quote-left"></i> نظرات</h2>
+            <h2 data-lang-en="Testimonials" data-lang-ru="Отзывы" data-lang-fa="نظرات" data-lang-ar="الشهادات"><i class="fas fa-quote-left"></i> الشهادات</h2>
             <div class="testimonials">
                 <div class="testimonial">
-                    <p data-lang-en='"Thanks to your fund, our family got medical help after the strike. You saved lives."' data-lang-ru='"Благодаря вашему фонду наша семья получила медицинскую помощь после удара. Вы спасли жизни."' data-lang-fa='"با تشکر از صندوق شما، خانواده ما پس از حمله کمک پزشکی دریافت کرد. شما جان‌ها را نجات دادید."'>"با تشکر از صندوق شما، خانواده ما پس از حمله کمک پزشکی دریافت کرد. شما جان‌ها را نجات دادید."</p>
-                    <cite> - خانواده‌ای از تهران</cite>
+                    <p data-lang-en='"Thanks to your fund, our family got medical help after the strike. You saved lives."' data-lang-ru='"Благодаря вашему фонду наша семья получила медицинскую помощь после удара. Вы спасли жизни."' data-lang-fa='"با تشکر از صندوق شما، خانواده ما پس از حمله کمک پزشکی دریافت کرد. شما جان‌ها را نجات دادید."'" data-lang-ar='"شكراً لصندوقكم، حصلت عائلتنا على مساعدة طبية بعد الهجوم. أنقذتم أرواحاً."'">"شكراً لصندوقكم، حصلت عائلتنا على مساعدة طبية بعد الهجوم. أنقذتم أرواحاً."</p>
+                    <cite data-lang-en=" - A family from Tehran" data-lang-ru=" - Семья из Тегерана" data-lang-fa=" - خانواده‌ای از تهران" data-lang-ar=" - عائلة من طهران"> - عائلة من طهران</cite>
                 </div>
                 <div class="testimonial">
-                    <p data-lang-en='"The aid for rebuilding our home came quickly and without bureaucracy. Real help!"' data-lang-ru='"Помощь на восстановление дома пришла быстро и без бюрократии. Настоящая помощь!"' data-lang-fa='"کمک برای بازسازی خانه ما سریع و بدون کاغذبازی آمد. کمک واقعی!"'>"کمک برای بازسازی خانه ما سریع و بدون کاغذبازی آمد. کمک واقعی!"</p>
-                    <cite> - ساکن شیراز</cite>
+                    <p data-lang-en='"The aid for rebuilding our home came quickly and without bureaucracy. Real help!"' data-lang-ru='"Помощь на восстановление дома пришла быстро и без бюрократии. Настоящая помощь!"' data-lang-fa='"کمک برای بازسازی خانه ما سریع و بدون کاغذبازی آمد. کمک واقعی!"'" data-lang-ar='"جاءت المساعدة لإعادة بناء منزلنا بسرعة وبدون إجراءات. مساعدة حقيقية!"'>"جاءت المساعدة لإعادة بناء منزلنا بسرعة وبدون إجراءات. مساعدة حقيقية!"</p>
+                    <cite data-lang-en=" - Resident of Shiraz" data-lang-ru=" - Житель Ширазa" data-lang-fa=" - ساکن شیراز" data-lang-ar=" - ساكن شيراز"> - ساكن شيراز</cite>
                 </div>
             </div>
         </div>
     </section>
     <section id="donate" class="section-block">
         <div class="container">
-            <h2 data-lang-en="DONATE" data-lang-ru="ПОЖЕРТВОВАНИЯ" data-lang-fa="کمک مالی"><i class="fas fa-donate"></i> کمک مالی</h2>
-            
+            <h2 data-lang-en="DONATE" data-lang-ru="ПОЖЕРТВОВАНИЯ" data-lang-fa="کمک مالی" data-lang-ar="التبرع"><i class="fas fa-donate"></i> التبرع</h2>
+           
             <div class="crypto" style="margin-top:50px; text-align:center;">
-                <h3 data-lang-en="Crypto Donations" data-lang-ru="Криптовалюта" data-lang-fa="کمک با ارز دیجیتال"><i class="fab fa-bitcoin"></i> کمک با ارز دیجیتال</h3>
-                <p>BTC: bc1qfy07vg9wedc3jjkt4wjgek7vmxdczrp940msrk <button class="copy-btn" onclick="copyToClipboard('bc1qfy07vg9wedc3jjkt4wjgek7vmxdczrp940msrk')">کپی</button></p>
-                <p>USDT TRC20: TK8sm5LHUbayifYESR2JGK7a4SepSLSsUW <button class="copy-btn" onclick="copyToClipboard('TK8sm5LHUbayifYESR2JGK7a4SepSLSsUW')">کپی</button></p>
-                <p>ETH: 0xb27394Ba4342eBC9943d5d7b5F868fC1C17C1a1d <button class="copy-btn" onclick="copyToClipboard('0xb27394Ba4342eBC9943d5d7b5F868fC1C17C1a1d')">کپی</button></p>
+                <h3 data-lang-en="Crypto Donations" data-lang-ru="Криптовалюта" data-lang-fa="کمک با ارز دیجیتال" data-lang-ar="التبرع بالعملة الرقمية"><i class="fab fa-bitcoin"></i> التبرع بالعملة الرقمية</h3>
+                <p>BTC: bc1qfy07vg9wedc3jjkt4wjgek7vmxdczrp940msrk <button class="copy-btn" onclick="copyToClipboard('bc1qfy07vg9wedc3jjkt4wjgek7vmxdczrp940msrk')" data-lang-en="Copy" data-lang-ru="Копировать" data-lang-fa="کپی" data-lang-ar="نسخ">نسخ</button></p>
+                <p>USDT TRC20: TK8sm5LHUbayifYESR2JGK7a4SepSLSsUW <button class="copy-btn" onclick="copyToClipboard('TK8sm5LHUbayifYESR2JGK7a4SepSLSsUW')" data-lang-en="Copy" data-lang-ru="Копировать" data-lang-fa="کپی" data-lang-ar="نسخ">نسخ</button></p>
+                <p>ETH: 0xb27394Ba4342eBC9943d5d7b5F868fC1C17C1a1d <button class="copy-btn" onclick="copyToClipboard('0xb27394Ba4342eBC9943d5d7b5F868fC1C17C1a1d')" data-lang-en="Copy" data-lang-ru="Копировать" data-lang-fa="کپی" data-lang-ar="نسخ">نسخ</button></p>
             </div>
         </div>
     </section>
     <section id="partners" class="section-block">
         <div class="container">
-            <h2 data-lang-en="Our Partners" data-lang-ru="Наши партнёры" data-lang-fa="شرکای ما"><i class="fas fa-handshake"></i> شرکای ما</h2>
+            <h2 data-lang-en="Our Partners" data-lang-ru="Наши партнёры" data-lang-fa="شرکای ما" data-lang-ar="شركاؤنا"><i class="fas fa-handshake"></i> شركاؤنا</h2>
             <div class="partners">
                 <div class="partner">UNHCR</div>
                 <div class="partner">Red Cross</div>
@@ -204,79 +208,69 @@
     </section>
     <section id="contact" class="section-block">
         <div class="container">
-            <h2 data-lang-en="Contact" data-lang-ru="Контакты" data-lang-fa="تماس"><i class="fas fa-envelope"></i> تماس</h2>
+            <h2 data-lang-en="Contact" data-lang-ru="Контакты" data-lang-fa="تماس" data-lang-ar="الاتصال"><i class="fas fa-envelope"></i> الاتصال</h2>
             <form>
-                <input type="text" placeholder="نام / Name" required>
-                <textarea placeholder="پیام شما / Ваше сообщение" rows="6" required></textarea>
-                <button type="submit" class="cta-btn" data-lang-en="Send" data-lang-ru="Отправить" data-lang-fa="ارسال">ارسال</button>
+                <input type="text" placeholder="الاسم / Name" data-lang-en="Name / Name" data-lang-ru="Имя / Name" data-lang-fa="نام / Name" data-lang-ar="الاسم / Name" required>
+                <textarea placeholder="رسالتك / Your message" data-lang-en="Your message / Ваше сообщение" data-lang-ru="Ваше сообщение / Ваше сообщение" data-lang-fa="پیام شما / Ваше сообщение" data-lang-ar="رسالتك / Your message" rows="6" required></textarea>
+                <button type="submit" class="cta-btn" data-lang-en="Send" data-lang-ru="Отправить" data-lang-fa="ارسال" data-lang-ar="إرسال">إرسال</button>
             </form>
         </div>
     </section>
     <footer>
         <div class="container">
-            <p>© 2026 صندوق امداد ایران | تمام کمک‌ها با شفافیت کامل گزارش می‌شود</p>
-            <p><a href="https://t.me/yourchannel" target="_blank"><i class="fab fa-telegram"></i> تلگرام</a> | <a href="https://x.com/youraccount" target="_blank"><i class="fab fa-x-twitter"></i> X</a> | <a href="mailto:info@iranrelief.org">info@iranrelief.org</a></p>
+            <p data-lang-en="© 2026 Iran Relief Fund | All donations are reported with full transparency" data-lang-ru="© 2026 Фонд помощи Ирану | Все пожертвования отчитываются с полной прозрачностью" data-lang-fa="© 2026 صندوق امداد ایران | تمام کمک‌ها با شفافیت کامل گزارش می‌شود" data-lang-ar="© 2026 صندوق إغاثة إيران | جميع التبرعات تُبلغ بشفافية كاملة">© 2026 صندوق إغاثة إيران | جميع التبرعات تُبلغ بشفافية كاملة</p>
+            <p><a href="https://t.me/yourchannel" target="_blank"><i class="fab fa-telegram"></i> تلغرام</a> | <a href="https://x.com/youraccount" target="_blank"><i class="fab fa-x-twitter"></i> X</a> | <a href="mailto:info@iranrelief.org">info@iranrelief.org</a></p>
         </div>
     </footer>
     <script>
         // Мультиязык
         const langSwitcher = document.getElementById('language-switcher');
-        const elements = document.querySelectorAll('[data-lang-en], [data-lang-ru], [data-lang-fa]');
-
+        const elements = document.querySelectorAll('[data-lang-en], [data-lang-ru], [data-lang-fa], [data-lang-ar]');
         function switchLanguage(lang) {
             elements.forEach(el => {
                 el.textContent = el.getAttribute(`data-lang-${lang}`) || el.textContent;
             });
             document.documentElement.lang = lang;
-            document.body.style.direction = (lang === 'fa') ? 'rtl' : 'ltr';
+            document.body.style.direction = (lang === 'fa' || lang === 'ar') ? 'rtl' : 'ltr';
         }
-
         langSwitcher.addEventListener('change', (e) => switchLanguage(e.target.value));
-        switchLanguage('fa');
-
+        switchLanguage('ar');
         // Прогресс-бар
         const goal = 300000;
         let collected = 60000; // Меняй здесь сумму собранных средств
         const progressBar = document.querySelector('.progress-bar');
         progressBar.style.width = `${(collected / goal) * 100}%`;
         progressBar.textContent = `${Math.round((collected / goal) * 100)}% (${collected}$ / ${goal}$)`;
-
         // Карусель фото
         const slides = document.querySelector('.slides');
         const slideCount = slides.children.length;
         let currentIndex = 0;
-
         function showSlide(index) {
             slides.style.transform = `translateX(-${index * 100}%)`;
         }
-
         document.getElementById('next').addEventListener('click', () => {
             currentIndex = (currentIndex + 1) % slideCount;
             showSlide(currentIndex);
         });
-
         document.getElementById('prev').addEventListener('click', () => {
             currentIndex = (currentIndex - 1 + slideCount) % slideCount;
             showSlide(currentIndex);
         });
-
         setInterval(() => {
             currentIndex = (currentIndex + 1) % slideCount;
             showSlide(currentIndex);
         }, 5000); // Авто-смена каждые 5 сек
-
         // Форма контактов (имитация)
         document.querySelector('#contact form').addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Сообщение отправлено!');
+            alert('تم إرسال الرسالة! / Message sent! / Сообщение отправлено! / پیام ارسال شد!');
         });
-
         // Функция копирования адресов
         function copyToClipboard(text) {
             navigator.clipboard.writeText(text).then(() => {
-                alert('آدرس کپی شد! / Address copied! / Адрес скопирован!');
+                alert('تم نسخ العنوان! / Address copied! / Адрес скопирован! / آدرس کپی شد!');
             }).catch(err => {
-                alert('خطا در کپی: ' + err);
+                alert('خطأ في النسخ: ' + err);
             });
         }
     </script>
